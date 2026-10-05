@@ -15,8 +15,8 @@ npm install @11ty/posthtml-urls
 ## Usage
 
 ```js
-const posthtml = require('posthtml');
-const urls = require('@11ty/posthtml-urls');
+import posthtml from 'posthtml';
+import urls from '@11ty/posthtml-urls';
 
 const options = {
   // rawNode added in v1.0.3
