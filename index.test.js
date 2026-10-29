@@ -1,8 +1,11 @@
 import { it, expect } from "vitest";
-const {filter} = require("./lib/defaultOptions");
-const plugin = require("./lib");
-const posthtml = require("posthtml");
+import {DEFAULT_OPTIONS} from "./lib/defaultOptions";
+import plugin from "./lib";
+import posthtml from "posthtml";
+
 import tags, { voidHtmlTags as voidTags } from "html-tags";
+
+const { filter } = DEFAULT_OPTIONS;
 
 const fixturesWithAttributes = Object.entries(filter).reduce((result, [tagName, attrs]) =>
 {
